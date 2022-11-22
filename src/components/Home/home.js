@@ -13,7 +13,6 @@ const Home = () => {
 
     return (
         <>
-
             {valores.map(item => {
                 return <ContainerHome isNavigation={true} name={item.name} />
                 
