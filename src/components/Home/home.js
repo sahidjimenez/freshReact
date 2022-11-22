@@ -13,11 +13,10 @@ const Home = () => {
 
     return (
         <>
-            {valores.map(item => {
-                return <ContainerHome isNavigation={true} name={item.name} />
+            {valores.map((item,id) => {
+                return <ContainerHome key={id} isNavigation={true} name={item.name} />
                 
             })}
-
 
         </>
     )
