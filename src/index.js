@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './components/Home/home';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Header from './components/Header/header';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+    errorElement:<p>no existe esta ruta</p>
+  },
+]);
 root.render(
   <React.StrictMode>
-    <Home />
-    
+    <Header />
+    <RouterProvider router={router} />
+
+
   </React.StrictMode>
 );
 

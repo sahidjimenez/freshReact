@@ -11,16 +11,13 @@ const ContainerHome = (props) => {
                     {name?name:null}
                 </button>
             </div>
-
         </>
     ) : null
     return (
         <div>
             {contenedorNavigation}
-
         </div>
     )
-
 }
 
 export default ContainerHome
