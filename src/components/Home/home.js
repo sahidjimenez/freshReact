@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             {valores.map((item,id) => {
-                return <ContainerHome key={id} isNavigation={true} name={item.name} />
+                return <ContainerHome key={id} isNavigation={true} name={item.name} route={item.route} />
                 
             })}
 
