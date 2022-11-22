@@ -1,9 +1,16 @@
 import React from 'react'
+import classes from './contact.module.css'
 
-const contact = () => {
+const Contact = () => {
   return (
-    <div>contact</div>
+    <div className={classes.root}>
+      <div className={classes.container}>
+        <div className={classes.title}>
+            <h2>Contactanos</h2>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default contact
+export default Contact
