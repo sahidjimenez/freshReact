@@ -2,10 +2,10 @@ import React from 'react'
 import ContainerHome from '../../miniComponents/ContainerHome'
 
 const valores = [
-    { name: "haz tu pedido", img: "", route: "/haz-tu-pedido" },
-    { name: "menu", img: "", route: "/menu" },
-    { name: "nosotros", img: "", route: "/nosotros" },
-    { name: "contacto", img: "", route: "/contacto" },
+    { name: "haz tu pedido", img: "", route: "/order" },
+    { name: "menu", img: "", route: "/Menu" },
+    { name: "nosotros", img: "", route: "/Nosotros" },
+    { name: "contacto", img: "", route: "/Contact" },
     { name: "extra", img: "", route: "/extra" }
 ]
 
@@ -13,9 +13,14 @@ const Home = () => {
 
     return (
         <>
-            {valores.map((item,id) => {
-                return <ContainerHome key={id} isNavigation={true} name={item.name} route={item.route} />
-                
+            {valores.map((item, id) => {
+                return <ContainerHome
+                    key={id}
+                    value={valores}
+                    isNavigation={true}
+                    name={item.name}
+                    route={item.route} />
+
             })}
 
         </>

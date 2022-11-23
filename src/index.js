@@ -9,11 +9,17 @@ import MenuPage from './components/MenuPage/menuPage';
 import UsPage from './components/UsPage/usPage';
 import ContactPage from './components/ContactPage/contactPage'
 import ExtraPage from './components/ExtraPage/extraPage'
+import OrderPage from './components/OrderPage/orderPage'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    errorElement:<p>no existe esta ruta</p>
+  },
+  {
+    path: "/order",
+    element: <OrderPage/>,
     errorElement:<p>no existe esta ruta</p>
   },
   {
@@ -41,8 +47,6 @@ root.render(
   <React.StrictMode>
     <Header />
     <RouterProvider router={router} />
-
-
   </React.StrictMode>
 );
 
