@@ -6,10 +6,14 @@ const ContainerHome = (props) => {
 
     const contenedorNavigation = isNavigation ? (
 
-        <div className='flex justify-center h-40'>
+        <div className='inline justify-center h-40'>
             <nav>
                 <ul>
                     <li>
+                        <div >
+                            <img alt={name} src={img}/>
+
+                        </div>
                         <Link to={route}> {name ? name : null}</Link>
                     </li>
                 </ul>
@@ -19,6 +23,7 @@ const ContainerHome = (props) => {
     ) : null
     return (
         <div>
+            {/*  <img src='static/11.png' alt='no hay'/> */}
             {contenedorNavigation}
         </div>
     )
