@@ -1,0 +1,58 @@
+.root{
+    display: grid;
+    composes: justify-center from global;
+    composes: text-[14px] from global;
+}
+
+.container{
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    color: green;
+    padding-bottom: 1rem;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.banner{
+    background-repeat: no-repeat;
+    height: 350px;
+    width: auto;
+}
+
+.form{
+    display: grid;
+    composes: justify-center from global;
+    gap: 0.5rem;
+}
+
+.name{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.inputText{
+    border-bottom: 2px solid green;
+}
+
+.textArea{
+    border-bottom: 2px solid green;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.send{
+    width: 50%;
+    border: 1px solid green;
+    border-radius: 8px;
+    background: greenyellow;
+}
