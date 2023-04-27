@@ -1,0 +1,60 @@
+.sidebar {
+
+    background-color: greenyellow;
+    position: fixed;
+    width: 200px;
+    right: -100%;
+
+}
+
+.button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.navegacion li {
+    padding: 10px;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: white;
+}
+
+.facebook svg {
+    width: 25px;
+    height: auto;
+    fill: white;
+}
+
+.holi {
+    padding: 20px;
+    background-color: aqua !;
+    max-width: 250px;
+    min-width: 30%;
+    height: 350px !important;
+    border-radius: 0 0 30px 0 !important;
+    color: white !important;
+    /* background: linear-gradient(90deg, hsla(86, 43%, 51%, 1) 0%, hsla(86, 82%, 33%, 1) 100%); */
+    background: -webkit-linear-gradient(90deg, hsla(86, 43%, 51%, 1) 0%, hsla(86, 82%, 33%, 1) 100%);
+}
