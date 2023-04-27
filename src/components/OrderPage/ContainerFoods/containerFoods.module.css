@@ -1,0 +1,10 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.containerFoods{
+    max-width: 500px;
+    display: grid;
+   
+}

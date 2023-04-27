@@ -1,0 +1,45 @@
+.container {
+    border: 1px solid rebeccapurple;
+    padding: 10px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.iconosOpciones {
+    display: inline-grid;
+    gap: 10px;
+    align-content: baseline;
+    z-index: 1;
+}
+.titulo{
+    color: white;
+    z-index: 1;
+}
+
+.image {
+    background-color: blue;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    
+}
+
+.nombre {
+
+    background-color: red;
+    z-index: 1;
+}
+
+.boton {
+    background-color: rgb(235, 169, 84);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}

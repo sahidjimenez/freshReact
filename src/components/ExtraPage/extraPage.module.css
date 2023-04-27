@@ -1,0 +1,23 @@
+.contenedor {
+    display: grid;
+    
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+  
+    
+}
+
+.lista {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    grid-column: 1;
+
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}

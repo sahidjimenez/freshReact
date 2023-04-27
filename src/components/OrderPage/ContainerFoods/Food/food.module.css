@@ -1,0 +1,11 @@
+.containerInfo {
+    width: 50%;
+    display: grid;
+    padding: 8px 16px;
+}
+
+.imagen {
+    width: 50%;
+    background-color: gold;
+}
+
