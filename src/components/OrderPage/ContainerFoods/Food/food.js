@@ -1,59 +1,33 @@
-import React, { useContext, useState, useCallback } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import css from './food.module.css'
-import { DataContext } from '../../../../context/DataContext';
-import Modal from '../Modal/modal';
-import { useOrderPage } from '../../Hooks/useOrderPage';
-import { Button } from '@mui/material';
+
+const comida = {
+    nombre: 'omelet',
+    precio: 100,
+    descripcion: 'Tortilla de huevo rellena de ingredientes al gusto.',
+    url: 'static/omelet.jpg'
+}
+
+const { nombre, precio, descripcion, url } = comida;
+
 const Food = props => {
+    /*  console.log( props) */
+    const { nombre:name, comidas:food } = props.props ? props.props:'';
+   
+    console.log(food)
 
-    const {
-        handleClickOpen,
-        setSelectedFood,
-        selectedFood,
-        open,
-        handleClose,
-
-    } = props
-
-    const { nombre: name, comidas: food } = props.props ? props.props : '';
-
-    const containerFood = (
-        food.map((element, i) => {
-
-            return (
-
-                <div key={i} onClick={() => {
-                    setSelectedFood(element)
-                    handleClickOpen()
-                }} className='container flex py-2'>
-
-                    <div className={css.containerInfo}>
-                        <span className='font-bold uppercase'>{element.nombre}</span>
-                        <span className='text-xs'>$ {element.precio}</span>
-                        <span className='text-xs'>{element.descripcion}</span>
-                    </div>
-                    <div className={css.imagen}>
-                        <img alt='prueba' src={element.urlImage}></img>
-                    </div>
-
-                </div>
-
-            )
-        })
-    )
     return (
-        <div >
+        <div className='container flex py-2'>
+
             <div className={css.containerInfo}>
                 <span className='font-bold uppercase'>{name}</span>
+                <span className='text-xs'>$ {precio}</span>
+                <span className='text-xs'>{descripcion}</span>
             </div>
-            {containerFood}
-            <Modal
-                valores={selectedFood}
-                handleClickOpen={handleClickOpen}
-                open={open}
-                handleClose={handleClose}
-            />
-           
+            <div className={css.imagen}>
+                <img alt='prueba' src={url}></img>
+            </div>
         </div>
     )
 }
